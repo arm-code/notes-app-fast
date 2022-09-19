@@ -57,7 +57,7 @@ def create_task(request):
 
 
 def home(request):
-    return render(request, 'home.html')
+    return render(request, 'profile.html')
 
 
 @login_required
