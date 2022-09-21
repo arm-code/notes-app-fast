@@ -1,5 +1,8 @@
 {% extends 'layouts/layout.html' %}
 {% load static %}
+
+{% include 'partials/menu.html' %}
+
 {% block content %}
     <div class="card">
         <div class="item1"><img src="{% static 'img/pf1.jpeg' %}" alt="profile"></div>
@@ -10,7 +13,7 @@
         </div>        
     </div>
     
-    {% include 'partials/menu.html' %}
+    
 
     <div class="card3">
         <div class="card-content">
@@ -33,5 +36,7 @@
             {% include 'partials/projects.html' %}
         </div>     
     </div>
+
+    {% include 'partials/footer.html' %}
 
 {% endblock content %}
