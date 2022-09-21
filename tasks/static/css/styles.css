@@ -24,7 +24,14 @@ ul li a{
   font-size: 20px;
   color: white;
 }
-
+footer{
+  background-color: var(--main-red);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
 body{
     background-color: var(--main-background);
     font-family: sans-serif;
@@ -85,12 +92,5 @@ a {
 
 }
 
-footer{
-  background-color: var(--main-red);
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;padding: 50px;
-}
+
 
