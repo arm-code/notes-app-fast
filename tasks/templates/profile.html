@@ -1,45 +1,34 @@
 {% extends 'layouts/layout.html' %}
+
 {% load static %}
-
-
 
 {% block content %}
 
-{% include 'partials/menu.html' %}
+    <section id="welcome-section" class="welcome-section">        
+            <img src="{% static 'img/pf1.jpeg' %}" alt="profile">
+            <h3>Hey, I am:</h3>
+            <h1>Alexis Romero Mendoza</h1>
+            <p>a web and desktop developer</p>
+    </section>
+    
+    <section id="projects-section" class="projects-section">               
+            <div class="card-projects">
+                <h3>Mis proyectos.</h3>
+                {% include 'partials/projects.html' %}
+            </div>             
+    </section>
 
-    <div class="card">
-        <div class="item1"><img src="{% static 'img/pf1.jpeg' %}" alt="profile"></div>
-        <div class="item2">
-            <p>Hola, mi nombre es:</p>
-            <h2>Alexis Romero Mendoza</h2>
-            <p>Soy desarrollor de Aplicaciones Web y de escritorio.</p>
-        </div>        
-    </div>
+    <section id="about-section" class="about-section">               
+        {% include 'partials/information.html' %}
+    </section>
+
+    <section id="contact-section" class="contact-section">        
+        {% include 'partials/contact.html' %}
+    </section>
     
     
+    
 
-    <div class="card3">
-        <div class="card-content">
-            <h3>Acerca de mi.</h3>
-            <p>Actualmente soy estudiante en la Universidad Autonoma de Ciudad
-                Juarez, estudio la carrera de ingenieria en sistemas computacionales.
-                <br> <br>
-                Trabajo en la industria maquiladora como auxiliar de ingenieria.
-                Dando a soporte a produccion con los proyectos. 
-                <br> <br>
-                En mi tiempo libre me dedico a desarrollar sistemas web con Django, y
-                algunas pequenas aplicaciones en Visual Studio con C#. 
-            </p>
-        </div>
-    </div>
-
-    <div class="card-myprojects">
-        <div class="card-content">
-            <h3>Mis proyectos.</h3>
-            {% include 'partials/projects.html' %}
-        </div>     
-    </div>
-
-    {% include 'partials/footer.html' %}
+    
 
 {% endblock content %}

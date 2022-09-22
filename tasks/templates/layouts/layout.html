@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="{% static 'css/styles.css'%}">
 </head>
 <body>
-    {% block content %}{% endblock content %}
+    {% include 'partials/menu.html' %}
+    {% block content %}{% endblock content %}    
+    {% include 'partials/footer.html' %}
 </body>
 </html>
