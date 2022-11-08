@@ -1,0 +1,25 @@
+{% extends 'layouts/layout-files.html' %}
+{% load static %}
+{% block container %}
+    <div class="title"><h1>WELCOME TO FILES MANAGER</h1></div>
+    <div class="menu">{% include 'partials/menu-bar.html' %}</div>
+    
+    <div class="container">
+        <br>
+        <h3>ADDED RECENTLY...</h3>
+        
+        <div class="drawings">
+            
+            {% for i in drawings %}                
+                <div class="dwg">
+                    <p> {{i.program}}</p>
+                </div>                
+            {% endfor %}
+            
+            <div class="dwg">
+                <p>Load More</p>
+            </div>
+
+        </div>
+    </div>
+{% endblock container %}
